@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             when { branch pattern: "(main|feature/.*)", comparator: "REGEXP"}
             steps {
-                bat 'dotnet test'
+                bat 'dotnet test' 
             }
         }
     }
